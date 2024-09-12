@@ -32,10 +32,10 @@ public class PaymentsProxy {
     HttpEntity<Payment> httpEntity = new HttpEntity<>(payment, headers);
 
     ResponseEntity<Payment> response =
-            rest.exchange(uri,
-                    HttpMethod.POST,
-                    httpEntity,
-                    Payment.class);
+        rest.exchange(uri,
+            HttpMethod.POST,
+            httpEntity,
+            Payment.class);
 
     return response.getBody();
   }

@@ -17,8 +17,8 @@ public class PaymentsController {
 
   @PostMapping("/payment")
   public Payment createPayment(
-          @RequestBody Payment payment
-  ) {
+      @RequestBody Payment payment
+      ) {
     return paymentsProxy.createPayment(payment);
   }
 }
