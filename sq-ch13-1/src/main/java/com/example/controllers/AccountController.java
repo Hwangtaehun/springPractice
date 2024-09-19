@@ -20,11 +20,11 @@ public class AccountController {
 
     @PostMapping("/transfer")
     public void transferMoney(@RequestBody TransferRequest request) {
-        transferService.transgerMoney(request.getSenderAccountId(), request.getReceiverAccountId(), request.getAmount());
+        transferService.transferMoney(request.getSenderAccountId(), request.getReceiverAccountId(), request.getAmount());
     }
 
     @GetMapping("/accounts")
     public List<Account> getAllAccounts() {
-        return transferService.getAllAcounts();
+        return transferService.getAllAccounts();
     }
 }
