@@ -1,13 +1,13 @@
-package com.example.sq_ch15;
+package com.example.sq_ch13;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SqCh15Application {
+public class Main {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SqCh15Application.class, args);
+		SpringApplication.run(SqCh13Application.class, args);
 	}
 
 }
